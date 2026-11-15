@@ -47,6 +47,8 @@ jobs:
               with:
                   github_token: ${{ secrets.GITHUB_TOKEN }}
                   publish_dir: .dist
+                  # Keep the root homepage, favicon and robots.txt on gh-pages.
+                  keep_files: true
                   # https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site
                   # This creates the CNAME file required to host github pages on a custom domain
                   # Remove this to use default [username].github.io domain
